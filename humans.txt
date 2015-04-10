@@ -1,0 +1,38 @@
+# humanstxt.org/
+# The humans responsible, technology colophon & other site info
+
+# TEAM
+	Patrick MacMannis
+		Lead Developer
+		@pat_macmannis
+		http://www.macmannis.com/
+
+# TECHNOLOGY COLOPHON
+	#HTML5
+		Agency Bootstrap Template
+		Font Awesome v4.1.0
+		Schema.org MicroData
+	#CSS3
+		Bootstrap v3.3.0
+		Normalize v3.0.2
+	#JavaScript
+		jQuery v1.11.1
+		Bootstrap v3.3.0
+		Codrops Animated Header v1.0.0
+		Classie (from bonzo.js)
+		jqBootstrapValidation.js v1.3.6
+
+# OTHER SITE INFO
+	#LAST UPDATE: 2015/03/31
+	#DOCTYPE: HTML5
+	#CONTENT TYPE: UTF-8
+	#LANGUAGE: English
+	#IDE
+		Notepad++
+	#VALIDATION:
+		W3C: Passed - http://validator.w3.org/check?uri=http%3A%2F%2Fwww.macmannis.com
+	#PERFORMANCE:
+		YSlow "V2": 84/100 - 2015/03/31
+		YSlow "Small Site or Blog": 94/100 - 2015/03/31
+		WooRank: 61.8 - 2015/03/31 - https://www.woorank.com/en/www/macmannis.com
+		Pingdom Time Test: 98/100 - 2015/03/23 (2.55s; 2.2MB; Faster Than 60%) - http://tools.pingdom.com/fpt/#!/MYB9p/http://www.macmannis.com/
