@@ -2,7 +2,7 @@
 
 if($sections[1]['active'] > 0) {
 ?>
-	<section id="services">
+	<section id="services" class="bg-light-gray">
 		<div class="container">
 		<?php echo $section1HTML;
 			echo $servicesHTML;
@@ -14,7 +14,7 @@ if($sections[1]['active'] > 0) {
 }
 if($sections[2]['active'] > 0) {
 ?>
-	<section id="portfolio" class="bg-light-gray">
+	<section id="portfolio">
 		<div class="container">
 		<?php echo $section2HTML;
 			echo $portfolioHTML;
@@ -22,6 +22,18 @@ if($sections[2]['active'] > 0) {
 		?>
 		</div>
 	</section>
+<?php
+}
+if($sections[9]['active'] > 0) {
+?>
+	<aside id="certs" class="bg-light-gray">
+		<div class="container">
+		<?php echo $section7HTML;
+			echo $certsHTML;
+			echo $section7DescrHTML;
+		?>
+		</div>
+	</aside>
 <?php
 }
 if($sections[3]['active'] > 0) {

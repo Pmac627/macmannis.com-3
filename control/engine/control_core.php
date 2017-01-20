@@ -37,6 +37,8 @@ abstract class base_ctrl {
 				$firstId = '#services';
 			} elseif ($sections[2]['active'] > 0) {
 				$firstId = '#portfolio';
+			} elseif ($sections[9]['active'] > 0) {
+				$firstId = '#certs';
 			} elseif ($sections[3]['active'] > 0) {
 				$firstId = '#about';
 			} elseif ($sections[4]['active'] > 0) {
@@ -72,6 +74,9 @@ abstract class base_ctrl {
 				case 8:
 					$firstId = '#closed';
 					break;
+				case 9:
+					$firstId = '#certs';
+					break;
 				default:
 					$firstId = '#services';
 					break;
@@ -96,6 +101,12 @@ abstract class base_ctrl {
 			<a class="page-scroll" href="#portfolio" title="Portfolio">Portfolio</a>
 		</li>';
 		}
+		if($sections[9]['active'] > 0) {
+			$navHTML .= '
+		<li>
+			<a class="page-scroll" href="#certs" title="Certifications">Certifications</a>
+		</li>';
+		}
 		if($sections[3]['active'] > 0) {
 			$navHTML .= '
 		<li>
@@ -108,6 +119,12 @@ abstract class base_ctrl {
 			<a class="page-scroll" href="#people" title="People">People</a>
 		</li>';
 		}
+		
+		$navHTML .= '
+		<li>
+			<a href="http://blog.macmannis.com/" title="Blog">Blog</a>
+		</li>';
+		
 		if($sections[5]['active'] > 0) {
 			$navHTML .= '
 		<li>

@@ -49,10 +49,10 @@ class relay {
 			$relay = 'home';
 		} else {
 			$link_fragments = explode('/', $relay);
-			$this->control = str_replace('-', '_', $link_fragments[0]);
+			$this->control = $link_fragments[0];
 
 			if(isset($link_fragments[1])) {
-				$this->action = str_replace('-', '_', $link_fragments[1]);
+				$this->action = $link_fragments[1];
 			}
 		}
 

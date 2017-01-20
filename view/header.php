@@ -17,12 +17,12 @@
 	<link href="<?php echo $site['base_url']; ?>view/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="<?php echo $site['base_url']; ?>view/css/agency.css" rel="stylesheet" />
 	<link href="<?php echo $site['base_url']; ?>view/css/fonts/font-awesome.min.css" type="text/css" rel="stylesheet" />
-	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" type="text/css" rel="stylesheet" />
-	<link href="http://fonts.googleapis.com/css?family=Kaushan+Script" type="text/css" rel="stylesheet" />
-	<link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" type="text/css" rel="stylesheet" />
-	<link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" type="text/css" rel="stylesheet" />
-	<link href="<?php echo $site['base_url']; ?>view/img/favicon.png" rel="icon" type="image/x-icon" />
-	<link href="<?php echo $site['base_url']; ?>view/img/favicon.png" rel="shortcut icon" type="image/x-icon" />
+	<link href="//fonts.googleapis.com/css?family=Montserrat:400,700" type="text/css" rel="stylesheet" />
+	<link href="//fonts.googleapis.com/css?family=Kaushan+Script" type="text/css" rel="stylesheet" />
+	<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" type="text/css" rel="stylesheet" />
+	<link href="//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" type="text/css" rel="stylesheet" />
+	<link href="<?php echo $site['base_url']; ?>view/img/favicon.png" rel="icon" type="image/png" />
+	<link href="<?php echo $site['base_url']; ?>view/img/favicon.png" rel="shortcut icon" type="image/png" />
 	<link href="<?php echo $site['base_url']; ?>view/img/macmannicon-57.jpg" rel="apple-touch-icon" sizes="57x57" />
 	<link href="<?php echo $site['base_url']; ?>view/img/macmannicon-72.jpg" rel="apple-touch-icon" sizes="72x72" />
 	<link href="<?php echo $site['base_url']; ?>view/img/macmannicon-114.jpg" rel="apple-touch-icon" sizes="114x114" />
@@ -31,10 +31,10 @@
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn"t work if you view the page via file:// -->
 	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" type="text/javascript"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" type="text/javascript"></script>
+		<script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" type="text/javascript"></script>
+		<script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" type="text/javascript"></script>
 	<![endif]-->
-	<script>
+	<script type="text/javascript">
 		!function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.insertBefore(d,q)}(window,document,'script','_gs');_gs('GSN-618152-H');
 	</script>
 </head>
@@ -42,7 +42,7 @@
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header page-scroll">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>

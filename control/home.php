@@ -20,6 +20,8 @@ class home_ctrl extends base_ctrl {
 		$this->registry->template->section5DescrHTML = self::_CreateSectionDescrHTML($sections, 5);
 		$this->registry->template->section6HTML = self::_CreateSectionHTML($sections, 6);
 		$this->registry->template->section6DescrHTML = self::_CreateSectionDescrHTML($sections, 6);
+		$this->registry->template->section7HTML = self::_CreateSectionHTML($sections, 9);
+		$this->registry->template->section7DescrHTML = self::_CreateSectionDescrHTML($sections, 9);
 
 		$services = db_page::GetServices($this->registry->db);
 		$this->registry->template->servicesHTML = self::_CreateServicesHTML($services);
@@ -36,6 +38,9 @@ class home_ctrl extends base_ctrl {
 
 		$clients = db_page::GetClients($this->registry->db);
 		$this->registry->template->clientsHTML = self::_CreateClientsHTML($clients, $this->site);
+
+		$certs = db_page::GetCerts($this->registry->db);
+		$this->registry->template->certsHTML = self::_CreateCertsHTML($certs, $this->site);
 
 		self::Render('home');
 	}
@@ -318,6 +323,32 @@ class home_ctrl extends base_ctrl {
 		}
 
 		return $clientsHTML;
+	}
+
+	private function _CreateCertsHTML($certs, $site) {
+		$certsHTML = "";
+		$certs_count = count($certs);
+		if($certs_count > 0) {
+			$certs_class_num = (12 / $certs_count);
+				
+			$certsHTML .= '
+				<div class="row">';
+
+			foreach($certs as $c) {
+				$certsHTML .= '
+					<div class="col-md-' . $certs_class_num . ' col-sm-6" itemprop="brand" itemscope itemtype="http://schema.org/Organization">
+						<meta itemprop="name" content="' . $c['title'] . '" />
+						<a href="' . $c['url'] . '" itemprop="url">
+							<img src="' . $site['base_url'] . $c['img'] . '" class="img-responsive img-centered" alt="' . $c['title'] . '" title="' . $c['title'] . '" itemprop="logo">
+						</a>
+					</div>';
+			}
+
+			$certsHTML .= '
+				</div>';
+		}
+
+		return $certsHTML;
 	}
 }
 ?>

@@ -9,13 +9,13 @@
 				<div class="col-md-4">
 					<ul class="list-inline social-buttons">
 						<li>
-							<a href="http://codepen.io/Pmac627/" title="Codepen"><i class="fa fa-codepen"></i></a>
+							<a href="//codepen.io/Pmac627/" title="Codepen"><i class="fa fa-codepen"></i></a>
 						</li>
 						<li>
-							<a href="http://www.facebook.com/MacMannis/" title="Facebook"><i class="fa fa-facebook"></i></a>
+							<a href="//www.facebook.com/MacMannis/" title="Facebook"><i class="fa fa-facebook"></i></a>
 						</li>
 						<li>
-							<a href="https://github.com/Pmac627" title="GitHub"><i class="fa fa-github"></i></a>
+							<a href="//github.com/Pmac627" title="GitHub"><i class="fa fa-github"></i></a>
 						</li>
 					</ul>
 				</div>
@@ -31,7 +31,7 @@
 	</footer>
 	<script src="<?php echo $site['base_url']; ?>view/js/jquery.js" type="text/javascript"></script>
 	<script src="<?php echo $site['base_url']; ?>view/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript"></script>
 	<!--<script src="<?php echo $site['base_url']; ?>view/js/combo.min.js" type="text/javascript"></script>-->
 	<script src="<?php echo $site['base_url']; ?>view/js/classie.js" type="text/javascript"></script>
 	<script src="<?php echo $site['base_url']; ?>view/js/cbpAnimatedHeader.js" type="text/javascript"></script>

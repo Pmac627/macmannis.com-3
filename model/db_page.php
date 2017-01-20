@@ -250,6 +250,31 @@ class db_page extends db {
 		return $clients;
 	}
 
+	public function GetCerts($conn) {
+		$sql = $conn->prepare(
+			'SELECT cert_id
+				, url
+				, img
+				, title
+				, active
+			FROM certs
+			WHERE active > 0
+			ORDER BY sort ASC'
+		);
+		$sql->execute();
+		$certs = array();
+		foreach($sql->fetchAll() as $record) {
+			$certs[$record['cert_id']] = array(
+				'url' => $record['url'],
+				'img' => $record['img'],
+				'title' => $record['title'],
+				'active' => $record['active']
+			);
+		}
+
+		return $certs;
+	}
+
 	private function ConvertToNo($bit, $meta) {
 		if($bit == 0) {
 			return "no" . $meta;
